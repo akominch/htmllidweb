@@ -1,0 +1,246 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+@font-face {
+	font-family: 'Conv';
+	src: url ('../fonts/PD8lhVe6.eot');
+	src: local('вє'), url('../fonts/PD8lhVe6.woff') format('woff'), url('../fonts/PD8lhVe6.ttf') format('truetype'), url('../fonts/PD8lhVe6.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr-UltraLight';
+  src: url('../fonts/HelveticaNeueCyr-UltraLight.eot');
+  src: url('../fonts/HelveticaNeueCyr-UltraLight.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/HelveticaNeueCyr-UltraLight.woff2') format('woff2'),
+       url('../fonts/HelveticaNeueCyr-UltraLight.woff') format('woff'),
+       url('../fonts/HelveticaNeueCyr-UltraLight.ttf') format('truetype'),
+       url('../fonts/HelveticaNeueCyr-UltraLight.svg#HelveticaNeueCyr-UltraLight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.clear {
+	clear: both;
+    height: 0;
+}
+body {
+	width: 100%;
+	height: 100%;
+	font-size: 15px;
+	color: #444;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0 auto;
+}
+.background {
+	background: url(../img/slider-2015.jpg) center bottom no-repeat;
+	height: 460px;
+	width: 100%;
+}
+.header {
+	width: 100%;
+	height: 70px;
+	/*background: url(../img/slider-2015.jpg) center bottom no-repeat;*/
+}
+.top_header {
+	width: 1200px;
+	margin: 0 auto;
+}
+/*.logo img {
+	margin-top: 10px;
+}*/
+a.logo {
+	display: block;
+	float: left;
+	font-family: 'Conv';
+	color: #ddd;
+	text-decoration: none;
+	font-size: 35px;
+	padding: 1px 0px 0px 0px;
+	text-shadow: 1px 1px 1px #000;
+	height: 70px;
+	overflow: hidden;
+}
+a.logo b {
+	font-family: 'HelveticaNeueCyr-UltraLight';
+	font-size: 18px;
+	display: block;
+	text-transform: none;
+	color: #ddd;	
+}
+.communication {
+	position: relative;
+	float: right;
+	margin-top: 15px;
+}
+.communication img {
+	margin: 0 3px -3px 0;
+	opacity: .6;
+	-moz-opacity: .6;
+    -ms-opacity: .6;
+    -o-opacity: .6;
+}
+.communication p {
+	float: left;
+	padding: 9px 8px 0;
+	margin: 0;
+	font-size: 16px;
+	text-shadow: 1px 1px 1px #000;
+	font-weight: 100;
+	color: #ddd;
+}
+.communication p b:hover {
+	color: #fff;
+}
+.communication p b:hover img {
+	opacity: 1;
+	-moz-opacity: 1;
+	-ms-opacity: 1;
+	-o-opacity: 1;
+}
+/*End header*/
+.container {
+	margin: 0 auto;
+	width: 1200px;
+	padding: 0 20px;
+}
+/*>>>>Menu<<<<<*/
+.nav {
+	width: 100%;
+	text-align: center;
+	border: 1px #555 solid;
+	padding: 0px;
+	margin: 10px 0px 0px 0px;
+	background: url(../img/navbbb.png);
+	/*position: absolute;*/
+}
+.nav ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px auto;
+	position: relative;
+}
+.nav ul li {
+	display: inline-block;
+	margin: 0px 0px;
+	cursor: pointer;
+}
+.nav ul li a {
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: block;
+	padding: 17px 27px;
+	font-size: 15px;
+	transition: all 0.4s ease-out;
+	-webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+}
+.nav ul li a:hover {
+	background: #fff;
+	color: #333;
+}
+.nav li ul {
+	height: 0px;
+	width: 0px;
+	overflow: hidden;
+	position: absolute;
+	top: auto;
+	margin: 0px;
+	text-align: left;
+	background: #fff;
+	z-index: 450;
+}
+.nav li ul li {
+	display: list-item;
+	margin: 0px;
+}
+.nav li ul li a {
+	color: #000;
+	padding: 13px 20px;
+	font-size: 14px;
+	border-bottom: 1px #f0f0f0 solid;
+	border-left: 1px #ccc solid;
+	border-right: 1px #ccc solid;
+}
+.nav li:hover ul{
+	height: auto;
+	width: auto;
+	left: auto;
+}
+.nav ul li:hover a {
+	background: #fff;
+	color: #333;
+}
+.nav li ul li a:hover {
+	background: #000;
+	color: #fff;
+}
+/*Brief*/
+.brief {
+	box-sizing: border-box;
+	height: 51px;
+	/*float: right*/;
+	position: relative;
+}
+.brief_cell {
+	height: 100%;
+	width: 122px;
+	/*overflow: hidden;*/
+	position: relative;
+	-webkit-transition: width .15s .05s;
+    -moz-transition: width .15s .05s;
+    -o-transition: width .15s .05s;
+    transition: width .15s .05s;
+}
+.brief_sell span {
+	display: block;
+	position: relative;
+	left: 20px;
+	-webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+}
+.brief_bounce {
+	padding-right: 24px;
+    background: url(../img/brief-ico2black.png) 100% 54% no-repeat;
+    top: -100%;
+    opacity: 0;
+    position: absolute;
+}
+.brief_base {
+	bottom: 0;
+	opacity: 1;
+}
+li.brief:hover .brief__cell {
+    width: 128px !important;
+}
+li.brief:hover .brief__bounce {
+    top: 0 !important;
+    opacity: 1 !important;
+}
+li.brief:hover .brief__base {
+    opacity: 0 !important;
+    bottom: -100% !important;
+}
+/*End Brief*/
+/*>>>>END MENU<<<<*/
