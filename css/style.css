@@ -59,8 +59,8 @@ body {
 	/*background: url(../img/slider-2015.jpg) center bottom no-repeat;*/
 }
 .top_header {
-	width: 1200px;
-	margin: 0 auto;
+	/*width: 1200px;
+	margin: 0 auto;*/
 }
 /*.logo img {
 	margin-top: 10px;
@@ -117,7 +117,8 @@ a.logo b {
 /*End header*/
 .container {
 	margin: 0 auto;
-	width: 1200px;
+	max-width: 1200px;
+	min-width: 960px;
 	padding: 0 20px;
 }
 /*>>>>Menu<<<<<*/
