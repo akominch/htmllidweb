@@ -1,0 +1,101 @@
+/*-----------------------------------------------------------------------------
+
+KENBURNER RESPONSIVE BASIC STYLES OF HTML DOCUMENT
+
+Screen Stylesheet
+
+version:   	1.0
+date:      	07/27/11
+author:		themepunch
+email:     	support@themepunch.com
+website:   	http://www.themepunch.com
+-----------------------------------------------------------------------------*/
+
+
+
+.boxedcontainer		{	max-width: 1170px; margin:auto; padding:0px 30px;}
+
+/*********************************************
+	-	SETTINGS FOR BANNER CONTAINERS	-
+**********************************************/
+
+.tp-banner-container{
+	width:100%;
+	position:relative;
+	padding:0;
+
+}
+
+.tp-banner{
+	width:100%;
+	position:relative;
+}
+
+.tp-banner-fullscreen-container {
+		width:100%;
+		position:relative;
+		padding:0;
+}
+
+.tp-caption h1{
+	/*margin-top: 15px;*/
+    padding: 50px 0px 0px 0px;
+    font-size: 35px;
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0px 1px 2px #000;
+}
+.tp-caption p{
+	width: 45%;
+	left: 10%;
+	margin-top: 75px;
+	color: #fff;
+	font-size: 22px;
+	line-height: 26px;
+	height: 200px;
+	overflow: hidden;
+	font-style: normal;
+	font-family: 'PT Sans Narrow', Arial, sans-serif;
+	font-weight: 100;
+	text-shadow: 0px 1px 2px #000;
+	text-align: left;
+	white-space: normal;
+}
+.tp-caption.p {
+	top: 35px !important;
+}
+.tp-caption a.button {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 27px;
+	font-size: 22px;
+	transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    border: 1px #555 solid;
+    text-align: center;
+    background: url(../img/navbbb.png);
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+    font-weight: 100;
+    text-shadow: 0px 1px 2px #000;
+    margin-bottom: 20px;
+}
+.tp-caption.button {
+	top: 279px !important;
+}
+.tp-caption a.button:hover {
+	background: #fff;
+    color: #333;
+}
+.tp-caption p.slide2 {
+	margin-top: 55px;
+}
+.tp-caption h1.slide2 {
+	padding: 30px 0px 0px 0px;
+}
+.tp-caption p.slide3 {
+	margin-top: 41px;
+}

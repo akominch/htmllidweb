@@ -49,9 +49,15 @@ body {
 	margin: 0 auto;
 }
 .background {
-	background: url(../img/slider-2015.jpg) center bottom no-repeat;
-	height: 460px;
+	background: url(../img/slider-2015-1.jpg) center 70% no-repeat;
+	height: 500px;
 	width: 100%;
+}
+.black {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background: rgba(0,0,0,0.7);
 }
 .header {
 	width: 100%;
