@@ -18,6 +18,8 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+
 @font-face {
 	font-family: 'Conv';
 	src: url ('../fonts/PD8lhVe6.eot');
@@ -67,6 +69,12 @@ time, mark, audio, video {
 .clear {
 	clear: both;
     height: 0;
+}
+h1 {
+	font-family: 'PT Sans Narrow', Arial, sans-serif;
+	color: #000;
+	font-size: 35px;
+	font-weight: 700;
 }
 body {
 	width: 100%;
@@ -133,6 +141,7 @@ a.logo b {
 	display: block;
 	text-transform: none;
 	color: #000;	
+	font-weight: 900;
 }
 .communication {
 	position: relative;
@@ -319,7 +328,7 @@ em {
     font-style: italic;
 }
 .cont_serv {
-	width: 1200px;
+	max-width: 1200px;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -329,15 +338,17 @@ ul.row {
 	padding-top: 40px;
 	position: relative;
 	font-size: 14px;
-	margin-left: -30px;
+	margin-left: -35px;
+	display: flex;
 }
 .span3 {
-	width: 270px;
+	max-width: 270px;
 	float: left;
     min-height: 1px;
-    margin-left: 30px;
+    margin-left: 38px;
 }
 ul.row li {
+	flex-grow: 1;
     display: block;
     background-color: #fff;
     height: 310px;
@@ -452,12 +463,186 @@ ul.row li p {
     -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
     box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
 }
+
+
+@media screen and (max-width: 1199px) and (min-width: 980px) {
+	.hero-image {
+	    top: -40px;
+	    left: 60px;
+	}
+}
 /*--==END_SERVICES==--*/
 
+/*Text*/
+.content-text {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.sectionsite {
+	width: 100%;
+	margin-top: 30px;
+}
+.article_left {
+	float: left;
+    width: 68.5%;
+    min-height: 400px;
+    margin: 20px 0 0;
+    padding: 20px 30px;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.25);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+    -webkit-transition: all .4s ease-out;
+    -moz-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+    -ms-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+}
+.aside {
+    float: right;
+    width: 24.2%;
+    min-height: 400px;
+    margin: 20px 0 0;
+}
+.article_left p {
+	color: #444;
+    text-align: justify;
+    line-height: 22px;
+    margin: 0;
+    font-size: 16px;
+    padding: 0 0 25px;
+}
+.article_left h2 {
+	font-size: 25px;
+    margin: 0;
+    padding: 0 0 15px;
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+    color: #000;
+    font-weight: 700;
+}
+.right_block {
+	background: #fff;
+	padding: 20px 30px;
+	margin-bottom: 20px;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.25);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+}
+.white_block {
+    background: #fff;
+    padding: 20px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.25);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+    line-height: 17px;
+    font-size: 14px;
+}
+.white_block h4 {
+	font-family: 'PT Sans Narrow' , Arial, sans-serif;
+    color: #444;
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    font-weight: 700;
+ }
+ .white_block ul {
+	 list-style: none;
+	 margin-top: 7px;
+	 margin-bottom: 10px;
+ }
+ .white_block ul li {
+    padding: 5px 0 5px 0px;
+    font-size: 14px;
+    background: none;
+    border-bottom: 1px solid #E5E5E5;
+}
+/* Базовый контейнер табов */
+.tabs {
+  min-width: 320px;
+  max-width: 800px;
+  padding: 0px;
+  margin: 0 auto; 
+}
+/* стили секций с содержанием */
+section {
+  display: none;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+.tabs input {
+  display: none;
+}
+/* стили вкладок (табов) */
+.tabs label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 15px;
+  font-weight: 600;
+  text-align: center;
+  color: #aaa;
+  border: 1px solid #ddd;
+  background: #f1f1f1;
+  border-radius: 3px 3px 0 0;
+}
+/* шрифт-иконки от Font Awesome в формате Unicode */
+.tabs label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+.tabs label[for*="1"]:before {
+  content: "\f19a";
+}
+.tabs label[for*="2"]:before {
+  content: "\f17a";
+}
+.tabs label[for*="3"]:before {
+  content: "\f13b";
+}
+.tabs label[for*="4"]:before {
+  content: "\f13c";
+}
+/* изменения стиля заголовков вкладок при наведении */
+.tabs label:hover {
+  color: #888;
+  cursor: pointer;
+}
+/* стили для активной вкладки */
+.tabs input:checked + label {
+  color: #555;
+  border: 1px solid #ddd;
+  border-top: 1px solid #009933;
+  border-bottom: 1px solid #fff;
+  background: #fff;
+}
+/* активация секций с помощью переключателя :checked */
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: block;
+}
+/* медиа запросы для различных типов носителей */  
+@media screen and (max-width: 680px) {
+  .tabs label {
+    font-size: 0;
+  }
+ 
+  .tabs label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .tabs label {
+    padding: 15px;
+  }
+}
 
+/*End Text*/
 
-
-
+/*Carousel*/
 .carousel_bg1 {
 	    margin-top: 80px;
 
