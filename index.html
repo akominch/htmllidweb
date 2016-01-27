@@ -13,6 +13,12 @@
 <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
 <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
 <script src="js/init.js"></script>
 	<!-- Internet Explorer HTML5 enabling script: -->
 	<!--[if IE]>
@@ -25,6 +31,65 @@
 				}
 	</style>
 	<![endif]-->
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox({
+		openEffect	: 'elastic',
+		closeEffect	: 'elastic'
+	});
+
+    (function ($, F) {
+    F.transitions.resizeIn = function() {
+        var previous = F.previous,
+            current  = F.current,
+            startPos = previous.wrap.stop(true).position(),
+            endPos   = $.extend({opacity : 1}, current.pos);
+
+        startPos.width  = previous.wrap.width();
+        startPos.height = previous.wrap.height();
+
+        previous.wrap.stop(true).trigger('onReset').remove();
+
+        delete endPos.position;
+
+        current.inner.hide();
+
+        current.wrap.css(startPos).animate(endPos, {
+            duration : current.nextSpeed,
+            easing   : current.nextEasing,
+            step     : F.transitions.step,
+            complete : function() {
+                F._afterZoomIn();
+
+                current.inner.fadeIn("fast");
+            }
+        });
+    };
+
+}(jQuery, jQuery.fancybox));
+
+$(".fancybox")
+    .attr('rel', 'gallery')
+    .fancybox({
+        nextMethod : 'resizeIn',
+        nextSpeed  : 250,
+        
+        prevMethod : false,
+        padding : 0,
+        helpers : {
+            title : {
+                type : 'inside'
+            }
+        }
+    });
+    
+    
+    
+    
+    
+    
+	});
+</script>
 </head>
 <body>
 	<!--HEADER-->
@@ -504,7 +569,7 @@
 	
 	<div class="aside">
 		<div class="right_block">
-			<p style="text-align: center; margin-bottom: 10px;">Являюсь сертифицированным партнером и специалистом, готов выполнить проект любой сложности</p>
+			<p style=" margin-bottom: 10px;">Являюсь сертифицированным партнером и специалистом, готов выполнить проект любой сложности</p>
 			<img src="img/bitrix-gold-partner.png" width="110" style="float: left; margin: 3px 9px 0px 0px;">
 			<img src="img/composite-1.png" style="margin: 3px 0px 0px 0px">
 			<img src="img/comp_b24.gif" style="margin: 3px 0px 0px 0px">
@@ -636,15 +701,108 @@
 		       </div>
             </div>
 			
-	
+	</div>
 	<!--End slider-->
-
+<div class="clear"></div>
+<div class="content-text">	
+	<div class="sectionsite">
+		<div class="article_left">
+			
+	<p>
+		Стоимость создания сайта у частного вебмастера ощутимо ниже, нежели аналогичная работа выполненная вебстудией.
+		 В вебстудиях, над проектом трудятся 6-7 человек, что влияет на конечную себестоимость. С другой стороны, один 
+		 человек физически не сможет взяться за большое количество проектов. Я всегда называю сроки разработки сайта 
+		 исходя из текущей загруженности и возможностей. Как правило, они не превышают 1/2 месяца на создание 
+		 интернет-магазина интегрированного с 1С-Управление Торговлей. </p>
+  <h2>Как заказать разработку сайта:</h2>
+ <p>Любая разработка сайта начинается с постановки задачи. Перед созданием дизайна и структуры web-проекта 
+	    необходимо правильно расставить цели и приоритеты. Поэтому:</p>
+  <ul> 	 
+      <li><b>Во первых</b> - нам необходимо детально обсудить все тонкости проекта. 	Предпочтительно по 
+      электронной почте, так как слова имеют свойство 	искажаться и забываться, а электропочту можно перечитать. 
+      К тому же, можно 	созвониться в skype или по телефону.</li>
+      <li><b>Во вторых</b> - нужно определиться с аудиторией для которой создается сайт. От учета 	
+      пола, возраста, специфики и еще ряда параметров потенциальных посетителей. Успешность 	
+      готового проекта зависит от возможности сайта ответить на все вопросы посетителя, 	
+      решить все его задачи</li>
+      <li><b>Далее</b> - определяемся с контентом (по началу возможно черновым), который 	
+      будет размещен на сайте. Его функциональные особенности и возможности посетителя 	
+      на сайте</li>
+     <li>Только после этого можно приступить к созданию сайта. На выходе Вы получите 	
+      проект максимально 	 отвечающий всем требованиям потенциальных посетителей и самое 	
+      главное, созданный сайт будет приносить доход.</li>
+     </ul>
+ <p><b>Так или иначе Вам не придется вникать в тонкости сайтостроения</b>, изучать 	
+	    терминологию и специфичные понятия- я сам задам правильные вопросы и составлю 	 
+	    техническое задание. Возможно заключение договора-подряда на <b>создание сайта</b>, 	 
+	    личная встреча и/или обсуждение в skype всех тонкостей разработки 	 
+	    сайта для Вашей фирмы.</p>
+</div>
+		
+		<div class="aside">
+			<div class="right_block nopadding">
+				<ul class="LeftAnouncesBlog">
+					<h4>Записки разработчика</h4>
+						<li>
+						<a href="#"><h5>Отфильтровать новости в Битрикс за заданный период</h5></a>
+						<p>Иногда, нужно отфильтровать элементы (новости например) по дате в Битрикс, с помощью компонента "список...</p>	</li>
+						<li>
+						<a href="#"><h5>Вывод даты создания элемента в правильном формате в Битрикс</h5></a>
+						<p>Если нужно вывести дату создания новости, статьи или товара в каталоге, в принципе любого элемента инфоблока-...</p>	</li>
+						<li>
+						<a href="#"><h5>Вывод элементов с помощью API битрикс</h5></a>
+						<p>Иногда, выводить элементы инфоблока с помощью компонентов, может оказаться избыточным. Например, если...</p>	</li>
+						<li>
+						<a href="#"><h5>Подключение SSL на Битрикс виртуальная машина</h5></a>
+						<p>Для некоторых сервисов, типа Яндекс Касса, требуется наличие SSL сертификата. То есть сайт должен без...</p>	</li>
+						<li>
+						<a href="#"><h5>Запуск сайтов на новой виртуальной машине битрикс версии 5</h5></a>
+						<p>У нескольких комментаторов трудности по запуску сайтов в виртуальной машине 4-ой версии. Здесь выложено...</p>	</li>
+						<li>
+						<a href="#"><h5>Очистка корзины битрикс одним нажатием</h5></a>
+						<p>В стандартной корзине Битрикс не хватает кнопки для полной очистки корзины одним нажатием. Требуется...</p>	</li>
+						<li>
+						<a href="#"><h5>Ссылка и название раздела в списке новостей Битрикс</h5></a>
+						<p>Если нужно вывести название раздела инфоблока в котором находится конкретный элемент/новость в компоненте...</p>	</li>
+				</ul>
+			</div>
+		</div>
+	</div>	
+</div>	
 	
+<div class="clear"></div>
+<div class="footContent">
+	<div class="first_footer">
+		<table class="cert">
+			<tr>
+				<td width="35%">
+					<div style="float: left;">
+					<h3>СЕРТИФИЦИРОВАННЫЙ СПЕЦИАЛИСТ 1С БИТРИКС</h3>
+					<p>Являюсь сертифицированным специалистом компании 1С-Битрикс прошедшим все необходимые курсы. <a href="#">Подробности на сайте Битрикc</a></p>
+					</div>
+				</td>
+				
+				<td>
+					<ul>
+						<li><a class="fancybox" rel="group" href="img/bitrix24.jpg"><img src="img/bitrix24.jpg" alt="" /></a></li>
+						<li><a class="fancybox" rel="group" href="img/bitrix24.jpg"><img src="img/bitrix24.jpg" alt="" /></a></li>
+						<li><a class="fancybox" rel="group" href="img/bitrix24.jpg"><img src="img/bitrix24.jpg" alt="" /></a></li>
+						<li><a class="fancybox" rel="group" href="img/bitrix24.jpg"><img src="img/bitrix24.jpg" alt="" /></a></li>
+						<li><a class="fancybox" rel="group" href="img/bitrix24.jpg"><img src="img/bitrix24.jpg" alt="" /></a></li>
+						<li><a class="fancybox" rel="group" href="img/bitrix24.jpg"><img src="img/bitrix24.jpg" alt="" /></a></li>
+						<li><a class="fancybox" rel="group" href="img/bitrix24.jpg"><img src="img/bitrix24.jpg" alt="" /></a></li>
+						<li><a class="fancybox" rel="group" href="img/bitrix24.jpg"><img src="img/bitrix24.jpg" alt="" /></a></li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="second_footer">
+		
+	</div>
+</div>	
 	
-	
-	
-	
-	
+	<div class="clear"></div>
 	<footer >		<script type="text/javascript">
 
 				jQuery(document).ready(function() {
