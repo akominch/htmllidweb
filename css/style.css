@@ -148,12 +148,9 @@ a.logo b {
 	float: right;
 	margin-top: 15px;
 }
-.communication img {
+.communication i {
 	margin: 0 3px -3px 0;
-	opacity: .6;
-	-moz-opacity: .6;
-    -ms-opacity: .6;
-    -o-opacity: .6;
+	
 }
 .communication p {
 	float: left;
