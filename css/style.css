@@ -777,8 +777,8 @@ p.bgp span {
     margin: 0 auto;
     background: url(../img/bg-section.jpg) 50% 50% repeat;
     background-attachment: fixed;
-    box-shadow: inset 0px 2px 5px #444;
-    -webkit-box-shadow: inset 0px 2px 5px #444;
+    /*box-shadow: inset 0px 2px 5px #444;
+    -webkit-box-shadow: inset 0px 2px 5px #444;*/
     margin-bottom: 20px;
     padding: 30px 0px;
 }
@@ -1087,33 +1087,35 @@ ul.LeftAnouncesBlog h5 {
 }
 .footContent {
 	width: 100%;
-	background-position: 24% 61%;
+	background-position: 24% 52%;
     background-repeat: no-repeat;
     background-color: #ececec;
     background-image: url(../img/hero.jpg);
     /*background-attachment: fixed;*/
-	height: 280px;
+	/*height: 280px;*/
 	margin-top: 40px;
 }
 .first_footer {
 	max-width: 1200px;
 	margin: 0 auto;
 	height: 135px;
+	padding: 30px 0px;
 }
 .cert {
 	float: left;
 
 }
 .cert h3 {
-	font-size: 30px;
+	font-size: 25px;
     color: #000;
-    font-weight: 100;
+    
     margin: 10px 0px;
 	font-family: 'PT Sans Narrow' , Arial, sans-serif;
+	font-weight: 700;
 }
 .cert p {
 	color: #000;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 14px;
     margin: 0px;
     padding: 0px;
@@ -1148,4 +1150,40 @@ ul.LeftAnouncesBlog h5 {
 }
 .cert {
 	float: left;
+}
+.footer {
+	padding: 10px 0px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.second_footer {
+	width: 100%;
+	height: 100%;
+	background: #ccc;
+} 
+.footer td {
+	width: 400px;
+	vertical-align: middle;
+}
+.zakazBTN {
+	color: #fff;
+    text-decoration: none;
+    padding: 2px 27px;
+    font-size: 22px;
+    transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    border: 1px #555 solid;
+    text-align: center;
+    background: url(../img/navbbb.png);
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+    font-weight: 100;
+    text-shadow: 0px 1px 2px #000;
+    margin-bottom: 20px;
+}
+.zakazBTN:hover {
+	background: #fff;
+    color: #333;
 }
