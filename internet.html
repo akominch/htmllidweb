@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Создание сайта на Битрикс</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/slider.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+<link rel="stylesheet" href="css/calc.css" media="screen" title="no title" charset="utf-8">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
+<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="js/jcarousel.responsive.js"></script>
+<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script type="text/javascript" src="js/reflection.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script src="js/init.js"></script>
+<script type="text/javascript">
+	jQuery(function($) {
+	$("img.reflect").reflect({/* Put custom options here */});
+	});
+</script>
+	<!-- Internet Explorer HTML5 enabling script: -->
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<style type="text/css">
+
+				.clear {
+					zoom: 1;
+					display: block;
+				}
+	</style>
+	<![endif]-->
+	<script type="text/javascript">
+	$(document).ready(function() {
+    (function ($, F) {
+    F.transitions.resizeIn = function() {
+        var previous = F.previous,
+            current  = F.current,
+            startPos = previous.wrap.stop(true).position(),
+            endPos   = $.extend({opacity : 1}, current.pos);
+
+        startPos.width  = previous.wrap.width();
+        startPos.height = previous.wrap.height();
+
+        previous.wrap.stop(true).trigger('onReset').remove();
+
+        delete endPos.position;
+
+        current.inner.hide();
+
+        current.wrap.css(startPos).animate(endPos, {
+            duration : current.nextSpeed,
+            easing   : current.nextEasing,
+            step     : F.transitions.step,
+            complete : function() {
+                F._afterZoomIn();
+
+                current.inner.fadeIn("fast");
+            }
+        });
+    };
+
+}(jQuery, jQuery.fancybox));
+
+$(".fancybox")
+    .attr('rel', 'gallery')
+    .fancybox({
+        nextMethod : 'resizeIn',
+        nextSpeed  : 250,
+
+        prevMethod : false,
+        padding : 0,
+        openEffect	: 'elastic',
+		closeEffect	: 'elastic',
+        helpers : {
+            title : {
+                type : 'inside'
+            }
+        }
+    });
+	});
+</script>
+</head>
+<body>
+  <div class="background small">
+  <!--	<div class="black"> -->
+  		<div class="top_back">
+  	<div class="container">
+  	<div class="header">
+  		<div class="top_header">
+
+  			<a class="logo" href="#">
+  				<!--<img src="img/logo7.png" alt="Логотип LidWeb.ru">-->
+  				Алексей Коминч
+  				<b>Создание сайтов на Битрикс</b>
+  			</a>
+
+  			<div class="communication">
+  				<p><b><i class="fa fa-skype" style="font-size: 19px;"></i>: alex26958</b></p>
+
+  				<p><b><i class="fa fa-envelope" style="font-size: 19px;"></i>: akominch@mail.ru</b></p>
+  			</div>
+  		</div>
+  	</div>
+  	</div>
+  	</div>
+  	<!--END HEADER-->
+  	<div class="clear"></div>
+  <!--MENU-->
+  	<div class="container">
+  		<div class="nav">
+  			<ul class="nav__list">
+  				<li><a href="#">Услуги</a>
+  					<ul>
+  						<li><a href="#">Сайт-визитка</a></li>
+  						<li><a href="#">Сайт фирмы</a></li>
+  						<li><a href="#">Персональный сайт</a></li>
+  						<li><a href="#">Интернет-магазин</a></li>
+  						<li><a href="#">Информационный портал</a></li>
+  						<li><a href="#">Одностраничный сайт</a></li>
+  						<li><a href="#">Композитный сайт</a></li>
+  					</ul>
+  				</li>
+  				<li><a href="#">Цены</a></li>
+  				<li><a href="#">Портфолио</a></li>
+  				<li><a href="#">Блог-note</a></li>
+  				<li><a href="#">Контакты</a></li>
+  				<li class="brief">
+  					<a href="#">
+  						<div class="brief_cell">
+  							<span class="brief_bounce">Заказать сайт</span>
+  							<span class="brief_base">Заказать сайт</span>
+  						</div>
+  					</a>
+
+  				</li>
+  			</ul>
+  		</div>
+  	</div>
+
+    <div class="clear"></div>
+<div class="container">
+    <h1>Создание интернет-магазина на Битрикс</h1>
+</div>
+<div class="line"></div>
+
+  </div>
+<div class="container">
+    <div class="sectionsite inner">
+        <div class="article_left">
+          <p><h2>1С-Битрикс включает в себя все возможности для успешных продаж.</h2>
+            <p><b>Даже маленькая компания может, имея полнофункциональный и большой сайт, конкурировать в интернет с большими корпорациями.</b></p>
+
+            <p><i><font color="#555">Конверсия - это это отношение числа посетителей сайта, выполнивших на нём какие-либо целевые действия к общему числу посетителей сайта, выраженное в процентах. То есть, если в вашем интерент-магазине из ста посетителей, стали покупателями только трое - ваша конверсия равна 3% </font></i> </p>
+
+            <h2>Стоимость создания интернет-магазина на Битрикс.</h2></p>
+            <div class="calc-sections">
+              <!--  <h2 class="head">Сколько стоит?</h2> -->
+                <div class="tabs-content">
+                    <div class="row-calc">
+                        <div class="items">
+                            <div class="col-sm-2">
+                                <div class="item" data-param="32900">
+                                    <div class="img-wrapper">
+                                      <img src="img/01.png" width="72" height="78" alt="ПО 1С-Битрикс" title="ПО 1С-Битрикс">
+                                    </div>
+                                    <div class="name">ПО 1С-Битрикс</div>
+                                    <div class="price">
+                                      <span class="value">32 900</span>
+                                      <span class="rub"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="item" data-param="55000">
+                                    <div class="img-wrapper">
+                                      <img src="img/4.png" width="72" height="78" alt="ПО 1С-Битрикс" title="ПО 1С-Битрикс">
+                                    </div>
+                                    <div class="name">Разработка ТЗ</div>
+                                    <div class="price">
+                                      <span class="value">55 000</span>
+                                      <span class="rub"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="way">
+                              <div class="col-sm-2">
+                                  <div class="item" data-param="112000">
+                                      <div class="img-wrapper">
+                                        <img src="img/2.png" width="72" height="78" alt="ПО 1С-Битрикс" title="ПО 1С-Битрикс">
+                                      </div>
+                                      <div class="name">Адаптивный дизайн</div>
+                                      <div class="price">
+                                        <span class="value">112 000</span>
+                                        <span class="rub"></span>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-sm-2">
+                                  <div class="item" data-param="63000">
+                                      <div class="img-wrapper">
+                                        <img src="img/3.png" width="72" height="78" alt="ПО 1С-Битрикс" title="ПО 1С-Битрикс">
+                                      </div>
+                                      <div class="name">Неадаптивный дизайн</div>
+                                      <div class="price">
+                                        <span class="value">63 000</span>
+                                        <span class="rub"></span>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="item" data-param="47000">
+                                    <div class="img-wrapper">
+                                      <img src="img/5.png" width="72" height="78" alt="ПО 1С-Битрикс" title="ПО 1С-Битрикс">
+                                    </div>
+                                    <div class="name">Верстка</div>
+                                    <div class="price">
+                                      <span class="value">47 000</span>
+                                      <span class="rub"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="item" data-param="33600">
+                                    <div class="img-wrapper">
+                                      <img src="img/7.png" width="72" height="78" alt="ПО 1С-Битрикс" title="ПО 1С-Битрикс">
+                                    </div>
+                                    <div class="name">Интеграция с 1С-УТ </div>
+                                    <div class="price">
+                                      <span class="value">33 600</span>
+                                      <span class="rub"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="item" data-param="5000">
+                                    <div class="img-wrapper">
+                                      <img src="img/8.png" width="72" height="78" alt="ПО 1С-Битрикс" title="ПО 1С-Битрикс">
+                                    </div>
+                                    <div class="name">Интеграция с CRM</div>
+                                    <div class="price">
+                                      <span class="value">5 000</span>
+                                      <span class="rub"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="item" data-param="30000">
+                                    <div class="img-wrapper">
+                                      <img src="img/9.png" width="72" height="78" alt="ПО 1С-Битрикс" title="ПО 1С-Битрикс">
+                                    </div>
+                                    <div class="name">Интеграция с 1С-Битрикс24</div>
+                                    <div class="price">
+                                      <span class="value">30 000</span>
+                                      <span class="rub"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="total-wrapper pull-left">
+
+                          <div class="price sum">
+                            <h4 class="caption">Итого:</h4>
+                              <span class="cur">0</span> <span class="bigr rub"></span>
+                          </div>
+
+                          <a class="but btn-red" href="javascript:void(0);" data-toggle="modal" data-target="#orderModal-bitrix-how-match" data-whatever="Интернет-магазин">Заказать</a>
+                      </div>
+
+                    </div>
+                </div>
+            </div> <!--End CALCULATOR-->
+            <div class="clear"></div>
+            <p>
+              Дальше много много текста, о том, какой хороший и замечательный Битрикс, и как без него не могут прожить ни дня.....
+            </p>
+        </div><!--End Left_Article-->
+
+        <div class="aside">
+          <div class="getsite">
+              <a class="trigger ordform" href="#">Заказать сайт
+                <span>на 1С-Битрикс</span></a>
+                <div class="clear"></div>
+
+                <p>Каждый сайт это уникальный инструмент продаж. Для правильной оценки стоимости мне необходима вводная информация.
+                  Прошу скачать <a href="#">бланк тех. задания</a> и выслать через эту форму или на e-mail: <a href="mailto:akominch@icloud.com">akominch@icloud.com</a></p>
+
+                  <div class="clear"></div>
+          </div>
+        </div><!--End ASIDE-->
+    </div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="footContent">
+	<div class="first_footer">
+		<table class="cert">
+			<tr>
+				<td class="lefttd" width="35%">
+					<div style="float: left;">
+					<h3>СЕРТИФИЦИРОВАННЫЙ СПЕЦИАЛИСТ 1С БИТРИКС</h3>
+					<p>Являюсь сертифицированным специалистом компании 1С-Битрикс прошедшим все необходимые курсы.<div class="clear"></div> <a href="#" class="zakazBTN">Подробности на сайте Битрикc</a></p>
+					</div>
+				</td>
+
+				<td class="righttd">
+					<ul>
+						<li>
+							<a class="fancybox" rel="group" href="img/bitrix24.jpg">
+								<img class="reflect" src="img/bitrix24.jpg" alt="" />
+							</a>
+						</li>
+						<li>
+							<a class="fancybox" rel="group" href="img/bitrix24.jpg">
+								<img class="reflect" src="img/biznes.jpg" alt="" />
+							</a>
+						</li>
+						<li>
+							<a class="fancybox" rel="group" href="img/bitrix24.jpg">
+								<img class="reflect" src="img/biznes.jpg" alt="" />
+							</a>
+						</li>
+						<li>
+							<a class="fancybox" rel="group" href="img/bitrix24.jpg">
+								<img class="reflect" src="img/biznes.jpg" alt="" />
+							</a>
+						</li>
+						<li>
+							<a class="fancybox" rel="group" href="img/bitrix24.jpg">
+								<img class="reflect" src="img/biznes.jpg" alt="" />
+							</a>
+						</li>
+						<li>
+							<a class="fancybox" rel="group" href="img/bitrix24.jpg">
+								<img class="reflect" src="img/biznes.jpg" alt="" />
+							</a>
+						</li>
+						<li>
+							<a class="fancybox" rel="group" href="img/bitrix24.jpg">
+								<img class="reflect" src="img/biznes.jpg" alt="" />
+							</a>
+						</li>
+						<li>
+							<a class="fancybox" rel="group" href="img/bitrix24.jpg">
+								<img class="reflect" src="img/biznes.jpg" alt="" />
+							</a>
+						</li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="second_footer">
+		<table class="footer">
+			<tr>
+				<td><p>© 2012-2016 Создание сайтов на Битрикс, Joomla. Редизайн 2016.</p></td>
+				<td align="center"><a href="#" class="zakazBTN">Заказать сайт</a></td>
+				<td align="right">Тут Яндекс Метрика</td>
+			</tr>
+		</table>
+	</div>
+</div>
+</body>
+</html>
