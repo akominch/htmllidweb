@@ -594,16 +594,16 @@ section {
   margin-right: 10px;
 }
 .tabs label[for*="1"]:before {
-  content: "\f19a";
+  content: "\f0e7";
 }
 .tabs label[for*="2"]:before {
-  content: "\f17a";
+  content: "\f0ec";
 }
 .tabs label[for*="3"]:before {
   content: "\f13b";
 }
 .tabs label[for*="4"]:before {
-  content: "\f13c";
+  content: "\f047";
 }
 /* изменения стиля заголовков вкладок при наведении */
 .tabs label:hover {
