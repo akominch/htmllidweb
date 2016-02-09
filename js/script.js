@@ -48,36 +48,36 @@ $(document).ready(function () {
 	////////////Калькулятор
 	//получаем значения параметров
 	function valParam ($this) {
-  
+
   	$this.toggleClass('check-param');
-  
+
    	var isChecked = $this.hasClass('check-param');
     var total = parseInt($('.cur').html());
-    var param = $this.data('param');    
+    var param = $this.data('param');
     var group = $this.closest('div.way');
   	var groupList = $(group).find('.check-param');
-    
+
     if (groupList.length > 1) {
     	for (var i = 0; i < groupList.length; i++) {
       	var $el = $(groupList[i]);
         var elCheked = $(groupList[i]).hasClass('check-param');
       	if (elCheked) {
           $el.removeClass('check-param');
-          total = total - $el.data('param'); 
-        }          
+          total = total - $el.data('param');
+        }
       }
-      total = total + $this.data('param'); 
+      total = total + $this.data('param');
       $this.addClass('check-param');
     }
-    
-    
+
+
 
     if (isChecked) {
     	total = total + param;
     } else {
     	total = total - param;
     }
-
+    var newtotal = number_format(total,0,'.',' ');
 			$('.cur').html(total);
 			$('.rub').show();
 		};

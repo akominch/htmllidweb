@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Создание сайта на Битрикс</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/slider.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+<link rel="stylesheet" href="css/calc.css" media="screen" title="no title" charset="utf-8">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
+<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="js/jcarousel.responsive.js"></script>
+<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script type="text/javascript" src="js/reflection.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script src="js/init.js"></script>
+<script type="text/javascript">
+	jQuery(function($) {
+	$("img.reflect").reflect({/* Put custom options here */});
+	});
+</script>
+	<!-- Internet Explorer HTML5 enabling script: -->
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<style type="text/css">
+
+				.clear {
+					zoom: 1;
+					display: block;
+				}
+	</style>
+	<![endif]-->
+	<script type="text/javascript">
+	$(document).ready(function() {
+
+
+    (function ($, F) {
+    F.transitions.resizeIn = function() {
+        var previous = F.previous,
+            current  = F.current,
+            startPos = previous.wrap.stop(true).position(),
+            endPos   = $.extend({opacity : 1}, current.pos);
+
+        startPos.width  = previous.wrap.width();
+        startPos.height = previous.wrap.height();
+
+        previous.wrap.stop(true).trigger('onReset').remove();
+
+        delete endPos.position;
+
+        current.inner.hide();
+
+        current.wrap.css(startPos).animate(endPos, {
+            duration : current.nextSpeed,
+            easing   : current.nextEasing,
+            step     : F.transitions.step,
+            complete : function() {
+                F._afterZoomIn();
+
+                current.inner.fadeIn("fast");
+            }
+        });
+    };
+
+}(jQuery, jQuery.fancybox));
+
+$(".fancybox")
+    .attr('rel', 'gallery')
+    .fancybox({
+        nextMethod : 'resizeIn',
+        nextSpeed  : 250,
+
+        prevMethod : false,
+        padding : 0,
+        openEffect	: 'elastic',
+		closeEffect	: 'elastic',
+        helpers : {
+            title : {
+                type : 'inside'
+            }
+        }
+    });
+
+
+
+
+
+
+	});
+</script>
+</head>
+<body>
+  <div class="background small">
+  <!--	<div class="black"> -->
+  		<div class="top_back">
+  	<div class="container">
+  	<div class="header">
+  		<div class="top_header">
+
+  			<a class="logo" href="#">
+  				<!--<img src="img/logo7.png" alt="Логотип LidWeb.ru">-->
+  				Алексей Коминч
+  				<b>Создание сайтов на Битрикс</b>
+  			</a>
+
+  			<div class="communication">
+  				<p><b><i class="fa fa-skype" style="font-size: 19px;"></i>: alex26958</b></p>
+
+  				<p><b><i class="fa fa-envelope" style="font-size: 19px;"></i>: akominch@mail.ru</b></p>
+  			</div>
+  		</div>
+  	</div>
+  	</div>
+  	</div>
+  	<!--END HEADER-->
+  	<div class="clear"></div>
+  <!--MENU-->
+  	<div class="container">
+  		<div class="nav">
+  			<ul class="nav__list">
+  				<li><a href="#">Услуги</a>
+  					<ul>
+  						<li><a href="#">Сайт-визитка</a></li>
+  						<li><a href="#">Сайт фирмы</a></li>
+  						<li><a href="#">Персональный сайт</a></li>
+  						<li><a href="#">Интернет-магазин</a></li>
+  						<li><a href="#">Информационный портал</a></li>
+  						<li><a href="#">Одностраничный сайт</a></li>
+  						<li><a href="#">Композитный сайт</a></li>
+  					</ul>
+  				</li>
+  				<li><a href="#">Цены</a></li>
+  				<li><a href="#">Портфолио</a></li>
+  				<li><a href="#">Блог-note</a></li>
+  				<li><a href="#">Контакты</a></li>
+  				<li class="brief">
+  					<a href="#">
+  						<div class="brief_cell">
+  							<span class="brief_bounce">Заказать сайт</span>
+  							<span class="brief_base">Заказать сайт</span>
+  						</div>
+  					</a>
+
+  				</li>
+  			</ul>
+  		</div>
+  	</div>
+
+    <div class="clear"></div>
+<div class="container">
+    <h1>Услуги по разработке сайтов</h1>
+</div>
+<div class="linetwo"></div>
+  </div>
+
+  <div class="container">
+      <div class="sectionsite inner">
+          <div class="article_left">
+            <ul class="bitNet"><li><a href="#" style="border-right: none;" class="zakazBTN">Создание сайта на Битрикс</a></li><li><a href="#" class="zakazBTN">Создание сайта на NetCat</a></li></ul>
+              <h2>Откуда берутся цены на разработку сайта</h2>
+                <p>
+                  Если пройтись по сайтам веб-студий, можно высчитать среднюю стоимость создания сайта, которая составляет <b>около 150-ти тысяч рублей</b> за простенький сайт с небольшим каталогом товаров. Разумеется, есть студии "клепающие" сайты и за 25000 рублей или даже за 2000, но не стоит брать их в расчет. Как правило они создают сайты на бесплатных системах управления по готовому шаблону за пару дней. Такой сайт не будет выделяться среди миллиона подобных, лишь испортит мнение о Вас перед клиентами.</p>
+                <p>Cтоимость сайта высчитывается на основе себестоимости, в которую, как правило, входят: разработка дизайна, верстка, программирование, настройка пользовательской части, поисковая оптимизация, наполнение и запуск проекта. Достаточно высокая стоимость создания сайта в веб-студии включает в себя работу над одним проектом нескольких человек : дизайнера, верстальщика, программиста, контент-менеджера и просто менеджера (того самого, что принял и обработал заказ). Им всем необходимо платить заработную плату, кроме того, приходится платить за аренду офиса, бытовые услуги.
+                </p>
+              <h2>Создание сайта у частного вебмастера</h2>
+                <p>
+                  Я работаю самостоятельно, именно поэтому себестоимость разработки сайта в 4 раза меньше. Для Вас обращение в студию всего-лишь бесполезная переплата, которая никак и ничем не оправдана с точки зрения затрат времени и денег.</p>
+                  <p>Ниже приведены цены на разработку основных видов сайтов. Данные цены являются ориентировочными, в каждой из них описан примерный комплекс проводимых мной работ. Точную стоимость разработки именно Вашего проекта, по Вашим требованиям и пожеланиям, всегда можно узнать написав мне через <a href="#">раздел контактов</a> на этом сайте
+                </p>
+
+                <h2>Создание сайта на системе 1С-Битрикс</h2>
+
+                <div class="serv">
+                  <a href="#"><div class="item_serv">
+                      <h5>Интернет-магазин на Битрикс</h5>
+                          <img src="img/photo_40943_20150913.jpg">
+                          <p class="more">от 100000 руб.</p>
+
+                  </div>
+                  </a>
+                  <a href="#"><div class="item_serv">
+                      <h5>Интернет-магазин на Битрикс</h5>
+                          <img src="img/photo_40943_20150913.jpg">
+                          <p class="more">от 100000 руб.</p>
+
+                  </div>
+                  </a>
+                  <a href="#"><div class="item_serv">
+                      <h5>Интернет-магазин на Битрикс</h5>
+                          <img src="img/photo_40943_20150913.jpg">
+                          <p class="more">от 100000 руб.</p>
+
+                  </div>
+                  </a>
+                  <a href="#"><div class="item_serv">
+                      <h5>Интернет-магазин на Битрикс</h5>
+                          <img src="img/photo_40943_20150913.jpg">
+                          <p class="more">от 100000 руб.</p>
+
+                  </div>
+                  </a>
+                  <a href="#"><div class="item_serv">
+                      <h5>Интернет-магазин на Битрикс</h5>
+                          <img src="img/photo_40943_20150913.jpg">
+                          <p class="more">от 100000 руб.</p>
+
+                  </div>
+                  </a>
+                  <a href="#"><div class="item_serv">
+                      <h5>Интернет-магазин на Битрикс</h5>
+                          <img src="img/photo_40943_20150913.jpg">
+                          <p class="more">от 100000 руб.</p>
+
+                  </div>
+                  </a>
+                  <a href="#"><div class="item_serv">
+                      <h5>Интернет-магазин на Битрикс</h5>
+                          <img src="img/photo_40943_20150913.jpg">
+                          <p class="more">от 100000 руб.</p>
+
+                  </div>
+                  </a>
+              </div>
+          <div class="clear"></div>
+
+          <h2>Создание сайта на системе NetCat</h2>
+          <div class="serv">
+            <a href="#"><div class="item_serv">
+                <h5>Интернет-магазин на NetCat</h5>
+                    <img src="img/photo_36209_20150213.jpg">
+                    <p class="more">от 80000 руб.</p>
+
+            </div>
+            </a>
+            <a href="#"><div class="item_serv">
+                <h5>Интернет-магазин на NetCat</h5>
+                    <img src="img/photo_36209_20150213.jpg">
+                    <p class="more">от 80000 руб.</p>
+
+            </div>
+            </a>
+            <a href="#"><div class="item_serv">
+                <h5>Интернет-магазин на NetCat</h5>
+                    <img src="img/photo_36209_20150213.jpg">
+                    <p class="more">от 80000 руб.</p>
+
+            </div>
+            </a>
+            <a href="#"><div class="item_serv">
+                <h5>Интернет-магазин на NetCat</h5>
+                    <img src="img/photo_36209_20150213.jpg">
+                    <p class="more">от 80000 руб.</p>
+
+            </div>
+            </a>
+            <a href="#"><div class="item_serv">
+                <h5>Интернет-магазин на NetCat</h5>
+                    <img src="img/photo_36209_20150213.jpg">
+                    <p class="more">от 80000 руб.</p>
+
+            </div>
+            </a>
+            <a href="#"><div class="item_serv">
+                <h5>Интернет-магазин на NetCat</h5>
+                    <img src="img/photo_36209_20150213.jpg">
+                    <p class="more">от 80000 руб.</p>
+
+            </div>
+            </a>
+            <a href="#"><div class="item_serv">
+                <h5>Интернет-магазин на NetCat</h5>
+                    <img src="img/photo_36209_20150213.jpg">
+                    <p class="more">от 80000 руб.</p>
+
+            </div>
+            </a>
+        </div>
+    </div>
+          <div class="aside"> 
+            <div class="getsite">
+                <a class="trigger ordform" href="#">Заказать сайт
+                  <span>на 1С-Битрикс</span></a>
+                  <div class="clear"></div>
+
+                  <p>Каждый сайт это уникальный инструмент продаж. Для правильной оценки стоимости мне необходима вводная информация.
+                    Прошу скачать <a href="#">бланк тех. задания</a> и выслать через эту форму или на e-mail: <a href="mailto:akominch@icloud.com">akominch@icloud.com</a></p>
+
+                    <div class="clear"></div>
+            </div>
+          </div><!--End ASIDE-->
+        </div>
+        </div>
+        </div>
+        <div class="clear"></div>
+        <div class="footContent">
+        <div class="first_footer">
+        <table class="cert">
+        <tr>
+          <td class="lefttd" width="35%">
+            <div style="float: left;">
+            <h3>СЕРТИФИЦИРОВАННЫЙ СПЕЦИАЛИСТ 1С БИТРИКС</h3>
+            <p>Являюсь сертифицированным специалистом компании 1С-Битрикс прошедшим все необходимые курсы.<div class="clear"></div> <a href="#" class="zakazBTN">Подробности на сайте Битрикc</a></p>
+            </div>
+          </td>
+
+          <td class="righttd">
+            <ul>
+              <li>
+                <a class="fancybox" rel="group" href="img/bitrix24.jpg">
+                  <img class="reflect" src="img/bitrix24.jpg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a class="fancybox" rel="group" href="img/bitrix24.jpg">
+                  <img class="reflect" src="img/biznes.jpg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a class="fancybox" rel="group" href="img/bitrix24.jpg">
+                  <img class="reflect" src="img/biznes.jpg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a class="fancybox" rel="group" href="img/bitrix24.jpg">
+                  <img class="reflect" src="img/biznes.jpg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a class="fancybox" rel="group" href="img/bitrix24.jpg">
+                  <img class="reflect" src="img/biznes.jpg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a class="fancybox" rel="group" href="img/bitrix24.jpg">
+                  <img class="reflect" src="img/biznes.jpg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a class="fancybox" rel="group" href="img/bitrix24.jpg">
+                  <img class="reflect" src="img/biznes.jpg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a class="fancybox" rel="group" href="img/bitrix24.jpg">
+                  <img class="reflect" src="img/biznes.jpg" alt="" />
+                </a>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        </table>
+        </div>
+        <div class="second_footer">
+        <table class="footer">
+        <tr>
+          <td><p>© 2012-2016 Создание сайтов на Битрикс, Joomla. Редизайн 2016.</p></td>
+          <td align="center"><a href="#" class="zakazBTN">Заказать сайт</a></td>
+          <td align="right">Тут Яндекс Метрика</td>
+        </tr>
+        </table>
+        </div>
+        </div>
+        </body>
+        </html>

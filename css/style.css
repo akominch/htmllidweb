@@ -1277,13 +1277,13 @@ td.righttd {
 .background.small {
 	height: 255px;
 }
-.line {
+.linetwo {
 	    position: relative;
 			width: 100%;
-			height: 100%;
+
 			margin-top: 38px;
 }
-.line:before {
+.linetwo:before {
     display: block;
     width: 100%;
     height: 5px;
@@ -1298,4 +1298,158 @@ td.righttd {
 .background.small h1 {
 	text-transform: uppercase;
 	padding: 38px 20px 0 0;
+}
+/*.bitNet {
+		text-align: center;
+		margin-bottom: 10px;
+}*/
+.bitNet a.zakazBTN {
+/*	background: #FFE5BF;
+	color: #000;*/
+	/*text-shadow: none;*/
+	display: block;
+}
+.bitNet a.zakazBTN:hover {
+	/*background: #FD963F;*/
+}
+ul.bitNet {
+	list-style: none;
+	margin: 0px 0px 10px 0px !important;
+	padding: 0px !important;
+	display: table;
+	width: 100%;
+}
+ul.bitNet li {
+	display: table-cell;
+}
+.bitNet a.zakazBTN:hover {
+    background: #fff;
+    color: #333;
+}
+.item_serv {
+	width: 30.3%;
+	height: 270px;
+	float: left;
+	margin: 0px 3% 40px 0px;
+	border-top: 1px #000 dashed;
+	background: #ccc;
+}
+.serv a {
+	color: #000;
+}
+a .item_serv h5 {
+	margin: 0px;
+	padding: 15px 20px 5px 20px;
+	font-size: 15px;
+	font-weight: bold;
+	height: 45px;
+	text-align: center;
+}
+.item_serv a {
+	display: block;
+	width: 100%;
+	height: 170px;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.item_serv img {
+	width: 100%;
+	height: 145px;
+}
+.item_serv p.more {
+	width: 150px;
+	background: #fff;
+	margin: 26px auto 0px auto;
+	display: block;
+	text-align: center;
+	padding: 10px 0px;
+	text-decoration: none;
+	border: 1px solid #f3eae1;
+	font-weight: bold;
+	border-bottom: 1px #333 dashed;
+	-webkit-transition: all .4s ease-out;
+	-moz-transition: all .4s ease-out;
+	-o-transition: all .4s ease-out;
+	-ms-transition: all .4s ease-out;
+	transition: all .4s ease-out;
+}
+.item_serv p.more:hover {
+	background: #333;
+	color: #fff;
+}
+.serv a:hover {
+	color: #980;
+}
+ul.port {
+	list-style: none;
+	margin-top: 20px;
+	padding: 0px;
+}
+ul.port:hover li a img {
+	opacity: 0.5;
+}
+ul.port li {
+	width: 47%;
+	margin: 25px 0px 20px 0px;
+	float: left;
+	border: 3px #fff solid;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.25);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+}
+ul.port li:nth-child(even) {
+	float: right;
+}
+ul.port li a {
+	display: block;
+	width: 100%;
+}
+ul.port li div.imgport {
+	display: block;
+	width: 100%;
+	height: 320px;
+	overflow: hidden;
+
+	-webkit-transition: all 3.6s ease-out;
+  -moz-transition: all 3.6s ease-out;
+  -o-transition: all 3.6s ease-out;
+  -ms-transition: all 3.6s ease-out;
+  transition: all 3.6s ease-out;
+}
+ul.port li a img {
+	width: 100%;
+	-webkit-transition: all 3.6s ease-out, opacity .35s ease-in-out;
+	-moz-transition: all 3.6s ease-out, opacity .35s ease-in-out;
+	-o-transition: all 3.6s ease-out, opacity .35s ease-in-out;
+	-ms-transition: all 3.6s ease-out, opacity .35s ease-in-out;
+	transition: all 3.6s ease-out, opacity .35s ease-in-out;
+
+}
+ul.port li a:hover img {
+	margin: -100px 0px 0px 0px;
+	opacity: 1;
+}
+ul.port li a {
+	text-decoration: none;
+}
+ul.port li a h2 {
+	margin: 0px;
+	padding: 12px 0px;
+  background: url(../img/navbbb.png);
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-family: 'PT Sans Narrow', Arial, sans-serif;
+	font-weight: 100;
+	transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  text-shadow: 0px 1px 2px #000;
+}
+ul.port li a:hover h2 {
+	color: #000;
+	background: #fff;
 }
