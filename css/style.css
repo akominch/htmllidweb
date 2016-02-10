@@ -800,13 +800,13 @@ p.bgp span {
     display: block;
 }
 .getsite p {
-    font-size: 13px;
-    line-height: 19px;
-    color: #000;
-    padding: 20px 0 0;
+    font-size: 13px !important;
+    line-height: 19px !important;
+    color: #000 !important;
+    padding: 20px 0 0 !important;
 }
 .getsite:hover {
-    height: 260px;
+    height: 250px;
     margin-bottom: -180px;
     -webkit-box-shadow: 0 15px 10px -10px #444,0 1px 0 #444;
     -moz-box-shadow: 0 15px 10px -10px #444,0 1px 0 #444;
@@ -1140,11 +1140,11 @@ ul.LeftAnouncesBlog h5 {
 }
 .footContent {
 	width: 100%;
-	background-position: 24% 52%;
+	background-position: 24% 266%;
     background-repeat: no-repeat;
     background-color: #ececec;
     background-image: url(../img/hero.jpg);
-    /*background-attachment: fixed;*/
+    background-attachment: fixed;
 	/*height: 280px;*/
 	margin-top: 40px;
 }
@@ -1452,4 +1452,22 @@ ul.port li a h2 {
 ul.port li a:hover h2 {
 	color: #000;
 	background: #fff;
+}
+table.portdetail {
+	margin: 30px 0px;
+}
+table.portdetail tr {
+	vertical-align: top;
+}
+table.portdetail td {
+	display: table-cell;
+	padding: 0px;
+	vertical-align: top;
+}
+table.portdetail p {
+	color: #000;
+  margin: 0;
+  padding: 0 0 20px;
+  line-height: 22px;
+  font-size: 14px;
 }
