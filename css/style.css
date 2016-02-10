@@ -1140,7 +1140,7 @@ ul.LeftAnouncesBlog h5 {
 }
 .footContent {
 	width: 100%;
-	background-position: 24% 266%;
+	background-position: 24% bottom;
     background-repeat: no-repeat;
     background-color: #ececec;
     background-image: url(../img/hero.jpg);
@@ -1148,6 +1148,14 @@ ul.LeftAnouncesBlog h5 {
 	/*height: 280px;*/
 	margin-top: 40px;
 }
+/*.backfooter {
+	width: 100%;
+	background-position: 24% 266%;
+  background-repeat: no-repeat;
+  background-color: #ececec;
+  background-image: url(../img/hero.jpg);
+  background-attachment: fixed;
+}*/
 .first_footer {
 	max-width: 1200px;
 	margin: 0 auto;
